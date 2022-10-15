@@ -22,7 +22,7 @@ if(!window.localStorage.getItem("Myusers")){
 window.onload = () => {
     setTimeout(() => {
         document.getElementById('loadingPage').style.display = "none"
-    }, 2000)
+    }, 200)
 }
 // dark and night mode function
 var checkIfEven = 1;
