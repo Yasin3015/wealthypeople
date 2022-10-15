@@ -97,7 +97,16 @@ function saveToStorage(){
 }
 // DISPLAY THE ITEMS OF THE ARRAY OF THE USERS
 function displayItems(){
-    document.getElementById("userInformation").innerHTML=`<h4>person <span>wealth</span></h4>`
+    if(document.getElementById("theTotal")){
+        document.getElementById("userInformation").innerHTML=`
+            <h4>person <span>wealth</span></h4>
+            <div class="total">
+                <span>Total Wealth</span> <span id="theTotal" >${calc().toFixed(0).replace(/\d(?=(\d{3})+\.)/g, '$&,')} $</span>
+            </div>
+        `
+    }else{
+        document.getElementById("userInformation").innerHTML=`<h4>person <span>wealth</span></h4>`
+    }
     myUsers.forEach(user=>{
         addToBody(user);
     })
