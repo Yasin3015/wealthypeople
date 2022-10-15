@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wealthy people</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- ======================== LOADING SPINNER creation ============== -->
+    
+    <div class="loadingcontainer" id="loadingPage">
+        <div class="loadingcontainer__loading">
+            <div class="loading__spinner"></div>
+        </div>
+    </div>
+
+    <!-- ======================== END LOADING SPINNER creation ============== -->
+
+    <div class="container">
+        <div class="selectmode" id="select">
+            <div class="select-container">
+                <div class="circle" id="selectCircle">
+    
+                </div>
+            </div>
+        </div>
+        <h1>wealth of rich people</h1>
+        <div class="content">
+            <div class="content__buttons">
+                <button type="button" class="content__buttons__btn" id="add">add user</button>
+                <button id="btnDoubleMoney" class="content__buttons__btn">Double Money</button>
+                <button id="btnShowMillionaires" class="content__buttons__btn">Show Only Millionaires</button>
+                <button id="btnSort" class="content__buttons__btn">Sort By Richest</button>
+                <button id="btnCalculateTotal" class="content__buttons__btn">Calculate Total Wealth</button>
+                <button type="button" class="content__buttons__btn" id="delete">delete all</button>
+            </div>
+            <div class="content__information" id="userInformation">
+                <h4>person <span>wealth</span></h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================== model creation ============== -->
+
+    <div class="model" id="theModel">
+        <div class="container">
+            <div class="model__message" id="modelMessage">
+                <h2 class="model__message__header">delete all <span id="cancelModel">&#128473;</span></h2>
+                <p class="model__message__text">Are you sure &#x3F;  you will delete all items you add </p>
+                <div class="model__message__buttons">
+                    <button type="button" class="secondary" id="close">cancel</button>
+                    <button type="button" class="primary" id="deleteAll">yes,delete all</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================== end model creation ============== -->
+    
+    <script src="assets/js/script.js"> </script>
+</body>
+</html>
