@@ -123,7 +123,7 @@ var getTheUser = async () => {
     addToBody(user);
     setTimeout(()=>{
         document.getElementById('loadingPage').style.display = "none";
-    },500)
+    },50)
 }
 let doubleMoney = async () => {    
     myUsers = myUsers.map(currentuser => {
